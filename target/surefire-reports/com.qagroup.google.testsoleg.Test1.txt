@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.qagroup.google.testsoleg.Test1
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.706 sec <<< FAILURE! - in com.qagroup.google.testsoleg.Test1
+test1(com.qagroup.google.testsoleg.Test1)  Time elapsed: 0.023 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-HEOVU1M', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at com.qagroup.google.testsoleg.Test1.test1(Test1.java:29)
+
