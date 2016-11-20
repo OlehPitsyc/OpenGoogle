@@ -1,0 +1,6 @@
+com\qagroup\google\pageobject\Google.class
+com\qagroup\google\pageobject\IWebApp.class
+com\qagroup\google\pageobject\IWebAppTest.class
+com\qagroup\google\pageobject\ResultPage.class
+com\qagroup\google\pageobject\StartPage.class
+com\qagroup\google\pageobject\TestResultListener.class

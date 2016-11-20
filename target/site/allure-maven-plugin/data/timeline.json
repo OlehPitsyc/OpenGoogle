@@ -1,0 +1,70 @@
+{
+  "hosts" : [ {
+    "title" : "DESKTOP-HEOVU1M",
+    "threads" : [ {
+      "title" : "7744@DESKTOP-HEOVU1M.pool-1-thread-1(14)",
+      "testCases" : [ {
+        "uid" : "8f12e491dbe7fa69",
+        "name" : "tearDown",
+        "title" : "Tear down",
+        "time" : {
+          "start" : 1479409017698,
+          "stop" : 1479409023090,
+          "duration" : 5392
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "1e4c1bddfcfee14d",
+        "name" : "test1",
+        "title" : "Test 1",
+        "time" : {
+          "start" : 1479409023105,
+          "stop" : 1479409023139,
+          "duration" : 34
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      } ]
+    }, {
+      "title" : "7744@DESKTOP-HEOVU1M.pool-1-thread-3(16)",
+      "testCases" : [ {
+        "uid" : "1e47b3a0e64634e7",
+        "name" : "testKeyboardAppearance",
+        "title" : "Test keyboard appearance",
+        "time" : {
+          "start" : 1479409017701,
+          "stop" : 1479409024235,
+          "duration" : 6534
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "d14d9cba49090b4d",
+        "name" : "testKeyboardClose",
+        "title" : "Test keyboard close",
+        "time" : {
+          "start" : 1479409024237,
+          "stop" : 1479409024417,
+          "duration" : 180
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    }, {
+      "title" : "7744@DESKTOP-HEOVU1M.pool-1-thread-2(15)",
+      "testCases" : [ {
+        "uid" : "63fc93072506d3bd",
+        "name" : "test1",
+        "title" : "Test 1",
+        "time" : {
+          "start" : 1479409020689,
+          "stop" : 1479409023079,
+          "duration" : 2390
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      } ]
+    } ]
+  } ]
+}

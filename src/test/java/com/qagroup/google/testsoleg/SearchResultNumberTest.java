@@ -1,10 +1,5 @@
 package com.qagroup.google.testsoleg;
 
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -12,11 +7,17 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.qagroup.google.pageobject.Google;
+import com.qagroup.google.pageobject.IWebApp;
+import com.qagroup.google.pageobject.IWebAppTest;
 import com.qagroup.google.pageobject.ResultPage;
 import com.qagroup.google.pageobject.StartPage;
 
-public class SearchResultNumberTest {
-	private WebDriver driver;
+import ru.yandex.qatools.allure.annotations.Features;
+import ru.yandex.qatools.allure.annotations.Stories;
+
+@Features("Search")
+public class SearchResultNumberTest implements IWebAppTest {
+
 	private StartPage startPage;
 	WebElement keyboard;
 	private ResultPage resultPage;
@@ -26,9 +27,9 @@ public class SearchResultNumberTest {
 	public void setUp() {
 		startPage = google.openStartPage();
 
-		
 	}
 
+	@Stories("Result Number Story")
 	@Test
 	public void test1() {
 		resultPage = startPage.searchFor("Hello world!");
@@ -38,16 +39,25 @@ public class SearchResultNumberTest {
 		// driver.findElement(By.cssSelector(".g"));
 		// List<WebElement> resultsList =
 		// driver.findElements(By.cssSelector(".g"));
+		// int numberOfResult = google.openStartPage().searchFor("Hello
+		// world!").getSearchResultNumber();
+
 		int numberOfResult = resultPage.getSearchResultNumber();
-		Assert.assertEquals(numberOfResult, 10);
+		// google.takeScreenshot();
+
+		Assert.assertEquals(numberOfResult, 10, "The number of found results is incorect:");
 
 	}
 
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
-//		if (driver != null)
-//		driver.quit();
+		// if (driver != null)
+		// driver.quit();
 		google.close();
+	}
+
+	public IWebApp getTestedApp() {
+		return this.google;
 	}
 
 	// @Test

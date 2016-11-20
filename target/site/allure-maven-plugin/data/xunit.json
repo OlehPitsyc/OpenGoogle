@@ -1,0 +1,82 @@
+{
+  "time" : {
+    "start" : 1479409017698,
+    "stop" : 1479409024417,
+    "duration" : 6719
+  },
+  "testSuites" : [ {
+    "uid" : "b25c474c54453ffe",
+    "name" : "Regression : Google Search Tests",
+    "title" : "Regression : Google Search Tests",
+    "time" : {
+      "start" : 1479409017698,
+      "stop" : 1479409024417,
+      "duration" : 6719
+    },
+    "statistic" : {
+      "total" : 5,
+      "passed" : 3,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 1,
+      "broken" : 1
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "8f12e491dbe7fa69",
+      "name" : "tearDown",
+      "title" : "Tear down",
+      "time" : {
+        "start" : 1479409017698,
+        "stop" : 1479409023090,
+        "duration" : 5392
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "1e47b3a0e64634e7",
+      "name" : "testKeyboardAppearance",
+      "title" : "Test keyboard appearance",
+      "time" : {
+        "start" : 1479409017701,
+        "stop" : 1479409024235,
+        "duration" : 6534
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "63fc93072506d3bd",
+      "name" : "test1",
+      "title" : "Test 1",
+      "time" : {
+        "start" : 1479409020689,
+        "stop" : 1479409023079,
+        "duration" : 2390
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "1e4c1bddfcfee14d",
+      "name" : "test1",
+      "title" : "Test 1",
+      "time" : {
+        "start" : 1479409023105,
+        "stop" : 1479409023139,
+        "duration" : 34
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "d14d9cba49090b4d",
+      "name" : "testKeyboardClose",
+      "title" : "Test keyboard close",
+      "time" : {
+        "start" : 1479409024237,
+        "stop" : 1479409024417,
+        "duration" : 180
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    } ]
+  } ]
+}
