@@ -1,0 +1,143 @@
+{
+  "uid" : "9bd31f455ddaa3f8",
+  "name" : "test1[911]",
+  "title" : "Test 1 [911]",
+  "time" : {
+    "start" : 1479756177247,
+    "stop" : 1479756178834,
+    "duration" : 1587
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 5
+  },
+  "failure" : {
+    "message" : "AssertionError: The number of found results is incorect: expected [10] but found [0]",
+    "stackTrace" : "java.lang.AssertionError: The number of found results is incorect: expected [10] but found [0]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\n\tat org.testng.Assert.assertEquals(Assert.java:116)\n\tat org.testng.Assert.assertEquals(Assert.java:389)\n\tat com.qagroup.google.testsoleg.SearchResultNumberTest.test1(SearchResultNumberTest.java:40)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)\n"
+  },
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "34c55d2ef030e6fd",
+    "name" : "Regression : Google Search Tests",
+    "title" : "Regression : Google Search Tests"
+  },
+  "steps" : [ {
+    "name" : "openStartPage",
+    "title" : "Open google start page: https://www.google.com.ua/",
+    "time" : {
+      "start" : 1479756173785,
+      "stop" : 1479756177245,
+      "duration" : 3460
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "searchFor[911]",
+    "title" : "Serach for 911",
+    "time" : {
+      "start" : 1479756177247,
+      "stop" : 1479756177487,
+      "duration" : 240
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 2
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "typeIntoSearchInput[911]",
+      "title" : "Type[911] into Search input",
+      "time" : {
+        "start" : 1479756177247,
+        "stop" : 1479756177350,
+        "duration" : 103
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "clickSearchButton",
+      "title" : "Click search button",
+      "time" : {
+        "start" : 1479756177350,
+        "stop" : 1479756177486,
+        "duration" : 136
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "getSearchResultNumber",
+    "title" : "Calculate the result number ",
+    "time" : {
+      "start" : 1479756177487,
+      "stop" : 1479756177516,
+      "duration" : 29
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Search result number",
+      "source" : "a16b6ead-a283-4d46-9136-65127876708e-attachment.txt",
+      "type" : "text/plain",
+      "size" : 1,
+      "uid" : "98282c85d6cce993"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "Failure Screenshot",
+    "source" : "b10dd22f-330a-40b5-8760-4d47ae45336b-attachment.png",
+    "type" : "image/png",
+    "size" : 77541,
+    "uid" : "3766c25ef4d6a153"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Result Number Story"
+  }, {
+    "name" : "feature",
+    "value" : "Search"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HEOVU1M"
+  }, {
+    "name" : "thread",
+    "value" : "9704@DESKTOP-HEOVU1M.pool-1-thread-1(14)"
+  }, {
+    "name" : "suite-name",
+    "value" : "Regression : Google Search Tests"
+  }, {
+    "name" : "suite-title",
+    "value" : "Regression : Google Search Tests"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  } ],
+  "parameters" : [ ]
+}

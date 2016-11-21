@@ -1,6 +1,11 @@
 com\qagroup\google\pageobject\Google.class
+com\qagroup\homework911\GoogleKeyboardApp.class
 com\qagroup\google\pageobject\IWebApp.class
 com\qagroup\google\pageobject\IWebAppTest.class
+com\qagroup\google\pageobject\TestResultListener.class
+com\qagroup\homework911\InputDataPage.class
+com\qagroup\google\pageobject\Browser.class
+com\qagroup\homework911\ResultPage.class
 com\qagroup\google\pageobject\ResultPage.class
 com\qagroup\google\pageobject\StartPage.class
-com\qagroup\google\pageobject\TestResultListener.class
+com\qagroup\homework911\OpenKeyboard.class

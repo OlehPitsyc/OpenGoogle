@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1479756162227" stop="1479756186200" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Regression : Google Search Tests</name>
+    <title>Regression : Google Search Tests</title>
+    <test-cases>
+        <test-case start="1479756170854" stop="1479756173783" status="failed">
+            <name>test1[Hello World!]</name>
+            <failure>
+                <message>AssertionError: The number of found results is incorect: expected [10] but found [0]</message>
+                <stack-trace>java.lang.AssertionError: The number of found results is incorect: expected [10] but found [0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at com.qagroup.google.testsoleg.SearchResultNumberTest.test1(SearchResultNumberTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1479756162520" stop="1479756170806" status="passed">
+                    <name>openStartPage</name>
+                    <title>Open google start page: https://www.google.com.ua/</title>
+                </step>
+                <step start="1479756170855" stop="1479756171399" status="passed">
+                    <name>searchFor[Hello World!]</name>
+                    <title>Serach for Hello World!</title>
+                    <steps>
+                        <step start="1479756170856" stop="1479756171156" status="passed">
+                            <name>typeIntoSearchInput[Hello World!]</name>
+                            <title>Type[Hello World!] into Search input</title>
+                        </step>
+                        <step start="1479756171157" stop="1479756171372" status="passed">
+                            <name>clickSearchButton</name>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1479756171405" stop="1479756172193" status="passed">
+                    <name>getSearchResultNumber</name>
+                    <title>Calculate the result number </title>
+                    <attachments>
+                        <attachment title="Search result number" source="5af9387b-b3ad-40cc-949d-cb50026bddb0-attachment.txt" type="text/plain"/>
+                    </attachments>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Failure Screenshot" source="ba9d3929-850e-4d21-80a4-e45924a45a59-attachment.png" type="image/png"/>
+            </attachments>
+            <labels>
+                <label name="story" value="Result Number Story"/>
+                <label name="feature" value="Search"/>
+                <label name="host" value="DESKTOP-HEOVU1M"/>
+                <label name="thread" value="9704@DESKTOP-HEOVU1M.pool-1-thread-1(14)"/>
+            </labels>
+        </test-case>
+        <test-case start="1479756177247" stop="1479756178834" status="failed">
+            <name>test1[911]</name>
+            <failure>
+                <message>AssertionError: The number of found results is incorect: expected [10] but found [0]</message>
+                <stack-trace>java.lang.AssertionError: The number of found results is incorect: expected [10] but found [0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at com.qagroup.google.testsoleg.SearchResultNumberTest.test1(SearchResultNumberTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1479756173785" stop="1479756177245" status="passed">
+                    <name>openStartPage</name>
+                    <title>Open google start page: https://www.google.com.ua/</title>
+                </step>
+                <step start="1479756177247" stop="1479756177487" status="passed">
+                    <name>searchFor[911]</name>
+                    <title>Serach for 911</title>
+                    <steps>
+                        <step start="1479756177247" stop="1479756177350" status="passed">
+                            <name>typeIntoSearchInput[911]</name>
+                            <title>Type[911] into Search input</title>
+                        </step>
+                        <step start="1479756177350" stop="1479756177486" status="passed">
+                            <name>clickSearchButton</name>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1479756177487" stop="1479756177516" status="passed">
+                    <name>getSearchResultNumber</name>
+                    <title>Calculate the result number </title>
+                    <attachments>
+                        <attachment title="Search result number" source="a16b6ead-a283-4d46-9136-65127876708e-attachment.txt" type="text/plain"/>
+                    </attachments>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Failure Screenshot" source="b10dd22f-330a-40b5-8760-4d47ae45336b-attachment.png" type="image/png"/>
+            </attachments>
+            <labels>
+                <label name="story" value="Result Number Story"/>
+                <label name="feature" value="Search"/>
+                <label name="host" value="DESKTOP-HEOVU1M"/>
+                <label name="thread" value="9704@DESKTOP-HEOVU1M.pool-1-thread-1(14)"/>
+            </labels>
+        </test-case>
+        <test-case start="1479756183085" stop="1479756184789" status="failed">
+            <name>test1[Selenium ide]</name>
+            <failure>
+                <message>AssertionError: The number of found results is incorect: expected [10] but found [0]</message>
+                <stack-trace>java.lang.AssertionError: The number of found results is incorect: expected [10] but found [0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at com.qagroup.google.testsoleg.SearchResultNumberTest.test1(SearchResultNumberTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1479756178835" stop="1479756183082" status="passed">
+                    <name>openStartPage</name>
+                    <title>Open google start page: https://www.google.com.ua/</title>
+                </step>
+                <step start="1479756183085" stop="1479756183445" status="passed">
+                    <name>searchFor[Selenium ide]</name>
+                    <title>Serach for Selenium ide</title>
+                    <steps>
+                        <step start="1479756183085" stop="1479756183265" status="passed">
+                            <name>typeIntoSearchInput[Selenium ide]</name>
+                            <title>Type[Selenium ide] into Search input</title>
+                        </step>
+                        <step start="1479756183265" stop="1479756183444" status="passed">
+                            <name>clickSearchButton</name>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1479756183445" stop="1479756183476" status="passed">
+                    <name>getSearchResultNumber</name>
+                    <title>Calculate the result number </title>
+                    <attachments>
+                        <attachment title="Search result number" source="ddb9daec-c86c-4754-ae2f-6afe279fbdb9-attachment.txt" type="text/plain"/>
+                    </attachments>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title="Failure Screenshot" source="aa7804d5-2b11-44ab-8bb8-b48c249ea901-attachment.png" type="image/png"/>
+            </attachments>
+            <labels>
+                <label name="story" value="Result Number Story"/>
+                <label name="feature" value="Search"/>
+                <label name="host" value="DESKTOP-HEOVU1M"/>
+                <label name="thread" value="9704@DESKTOP-HEOVU1M.pool-1-thread-1(14)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

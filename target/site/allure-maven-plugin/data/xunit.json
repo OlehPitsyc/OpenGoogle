@@ -1,82 +1,60 @@
 {
   "time" : {
-    "start" : 1479409017698,
-    "stop" : 1479409024417,
-    "duration" : 6719
+    "start" : 1479756170854,
+    "stop" : 1479756184789,
+    "duration" : 13935
   },
   "testSuites" : [ {
-    "uid" : "b25c474c54453ffe",
+    "uid" : "34c55d2ef030e6fd",
     "name" : "Regression : Google Search Tests",
     "title" : "Regression : Google Search Tests",
     "time" : {
-      "start" : 1479409017698,
-      "stop" : 1479409024417,
-      "duration" : 6719
+      "start" : 1479756170854,
+      "stop" : 1479756184789,
+      "duration" : 13935
     },
     "statistic" : {
-      "total" : 5,
-      "passed" : 3,
+      "total" : 3,
+      "passed" : 0,
       "pending" : 0,
       "canceled" : 0,
-      "failed" : 1,
-      "broken" : 1
+      "failed" : 3,
+      "broken" : 0
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "8f12e491dbe7fa69",
-      "name" : "tearDown",
-      "title" : "Tear down",
+      "uid" : "a4698cbc58884d71",
+      "name" : "test1[Hello World!]",
+      "title" : "Test 1 [Hello World!]",
       "time" : {
-        "start" : 1479409017698,
-        "stop" : 1479409023090,
-        "duration" : 5392
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "1e47b3a0e64634e7",
-      "name" : "testKeyboardAppearance",
-      "title" : "Test keyboard appearance",
-      "time" : {
-        "start" : 1479409017701,
-        "stop" : 1479409024235,
-        "duration" : 6534
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "63fc93072506d3bd",
-      "name" : "test1",
-      "title" : "Test 1",
-      "time" : {
-        "start" : 1479409020689,
-        "stop" : 1479409023079,
-        "duration" : 2390
+        "start" : 1479756170854,
+        "stop" : 1479756173783,
+        "duration" : 2929
       },
       "severity" : "NORMAL",
       "status" : "FAILED"
     }, {
-      "uid" : "1e4c1bddfcfee14d",
-      "name" : "test1",
-      "title" : "Test 1",
+      "uid" : "9bd31f455ddaa3f8",
+      "name" : "test1[911]",
+      "title" : "Test 1 [911]",
       "time" : {
-        "start" : 1479409023105,
-        "stop" : 1479409023139,
-        "duration" : 34
+        "start" : 1479756177247,
+        "stop" : 1479756178834,
+        "duration" : 1587
       },
       "severity" : "NORMAL",
-      "status" : "BROKEN"
+      "status" : "FAILED"
     }, {
-      "uid" : "d14d9cba49090b4d",
-      "name" : "testKeyboardClose",
-      "title" : "Test keyboard close",
+      "uid" : "d01533ae584503ab",
+      "name" : "test1[Selenium ide]",
+      "title" : "Test 1 [Selenium ide]",
       "time" : {
-        "start" : 1479409024237,
-        "stop" : 1479409024417,
-        "duration" : 180
+        "start" : 1479756183085,
+        "stop" : 1479756184789,
+        "duration" : 1704
       },
       "severity" : "NORMAL",
-      "status" : "PASSED"
+      "status" : "FAILED"
     } ]
   } ]
 }

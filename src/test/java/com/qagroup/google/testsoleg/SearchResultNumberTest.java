@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qagroup.google.pageobject.Google;
@@ -23,36 +25,29 @@ public class SearchResultNumberTest implements IWebAppTest {
 	private ResultPage resultPage;
 	private Google google = new Google();
 
-	@BeforeClass
+	@BeforeMethod
 	public void setUp() {
 		startPage = google.openStartPage();
 
 	}
 
 	@Stories("Result Number Story")
-	@Test
-	public void test1() {
-		resultPage = startPage.searchFor("Hello world!");
-		// driver.findElement(By.cssSelector("#lst-ib")).sendKeys("Hello
-		// world!");
-		// driver.findElement(By.cssSelector(".lsb"));
-		// driver.findElement(By.cssSelector(".g"));
-		// List<WebElement> resultsList =
-		// driver.findElements(By.cssSelector(".g"));
-		// int numberOfResult = google.openStartPage().searchFor("Hello
-		// world!").getSearchResultNumber();
-
+	@Test(dataProvider = "dataProvider")
+	public void test1(String query) {
+		resultPage = startPage.searchFor(query);
 		int numberOfResult = resultPage.getSearchResultNumber();
-		// google.takeScreenshot();
 
 		Assert.assertEquals(numberOfResult, 10, "The number of found results is incorect:");
 
 	}
 
+	@DataProvider(name = "dataProvider")
+	public Object[][] data() {
+		return new Object[][] { { "Hello World!" }, { "911" }, { "Selenium ide" } };
+	}
+
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
-		// if (driver != null)
-		// driver.quit();
 		google.close();
 	}
 

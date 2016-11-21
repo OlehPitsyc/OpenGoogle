@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 20.968 sec <<< FAILURE! - in TestSuite
-test1(com.qagroup.google.testsoleg.SearchResultNumberTest)  Time elapsed: 2.376 sec  <<< FAILURE!
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 26.782 sec <<< FAILURE! - in TestSuite
+test1(com.qagroup.google.testsoleg.SearchResultNumberTest)  Time elapsed: 2.959 sec  <<< FAILURE!
 java.lang.AssertionError: The number of found results is incorect: expected [10] but found [0]
-	at com.qagroup.google.testsoleg.SearchResultNumberTest.test1(SearchResultNumberTest.java:48)
+	at com.qagroup.google.testsoleg.SearchResultNumberTest.test1(SearchResultNumberTest.java:40)
 
-test1(com.qagroup.google.testsoleg.Test1)  Time elapsed: 0.001 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'DESKTOP-HEOVU1M', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: driver.version: RemoteWebDriver
-	at com.qagroup.google.testsoleg.Test1.test1(Test1.java:29)
+test1(com.qagroup.google.testsoleg.SearchResultNumberTest)  Time elapsed: 1.588 sec  <<< FAILURE!
+java.lang.AssertionError: The number of found results is incorect: expected [10] but found [0]
+	at com.qagroup.google.testsoleg.SearchResultNumberTest.test1(SearchResultNumberTest.java:40)
+
+test1(com.qagroup.google.testsoleg.SearchResultNumberTest)  Time elapsed: 1.706 sec  <<< FAILURE!
+java.lang.AssertionError: The number of found results is incorect: expected [10] but found [0]
+	at com.qagroup.google.testsoleg.SearchResultNumberTest.test1(SearchResultNumberTest.java:40)
 

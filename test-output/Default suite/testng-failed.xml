@@ -3,17 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="Test911.TestInput911"/>
+      <class name="com.qagroup.google.testsoleg.SearchResultNumberTest"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="Test911.TestInput911">
+      <class name="com.qagroup.google.testsoleg.SearchResultNumberTest">
         <methods>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testTextInInputByKeyboard"/>
+          <include name="test1" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- Test911.TestInput911 -->
+      </class> <!-- com.qagroup.google.testsoleg.SearchResultNumberTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
